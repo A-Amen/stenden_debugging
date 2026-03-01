@@ -1,6 +1,6 @@
 MNIST/
-.png
-.jpg
-.jpeg
+*.png
+*.jpg
+*.jpeg
 .vscode
 /.ipynb_checkpoints
