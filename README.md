@@ -28,8 +28,9 @@ All .py files are formatted using [ruff](https://docs.astral.sh/ruff/).
 ## Answer:
 
 1. Sets are unordered so it always goes in with a different order.
-<br>
+
 2. Use lists instead of set when calling the function, e.g. ```name1 = id_to_fruit(1, ["apple", "orange", "melon", "kiwi", "strawberry"])```, and change the function prototype to match the new change ```def id_to_fruit(fruit_id: int, fruits: list[str]) -> str:```.
+
 ---
 
 # Question 2
