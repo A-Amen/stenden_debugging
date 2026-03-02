@@ -71,4 +71,6 @@ coords = np.array([[10, 5, 15, 6, 0],
                    [5, 3, 13, 6, 1],
                    [4, 4, 13, 6, 1],
                    [6, 5, 13, 16, 1]])
+print(coords)
 swapped_coords = swap(coords)
+print(swapped_coords)
