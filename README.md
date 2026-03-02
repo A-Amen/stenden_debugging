@@ -29,7 +29,7 @@ All .py files are formatted using [ruff](https://docs.astral.sh/ruff/).
 
 1. Sets are unordered so it always goes in with a different order.
 <br>
-2. Use lists instead of set when calling the function, e.g. `name1 = id_to_fruit(1, ["apple", "orange", "melon", "kiwi", "strawberry"])`, and change the function prototype to match the new change `def id_to_fruit(fruit_id: int, fruits: list[str]) -> str:`.
+2. Use lists instead of set when calling the function, e.g. ```name1 = id_to_fruit(1, ["apple", "orange", "melon", "kiwi", "strawberry"])```, and change the function prototype to match the new change ```def id_to_fruit(fruit_id: int, fruits: list[str]) -> str:```.
 ---
 
 # Question 2
@@ -135,4 +135,4 @@ All .py files are formatted using [ruff](https://docs.astral.sh/ruff/).
     - I previously found that with batch size set to 64, n can range from 0 to 937.5 ( `0 to 60000 / batch_size` ).
     - From this, we can derive with batch size 32, only the 32nd batch is output and the rest 1874 are discarded. Similarly for batch size 64, 936 are discarded. 
     - This seems too arbitrary. Normally, you would want to display the 1st or 2nd result + the last result to indicate a clear path from start to end for a given epoch.
-    - 
+    - The fix I have used is to  display/output the image if it is the first or last iteration in the inner loop of the epoch loop.
